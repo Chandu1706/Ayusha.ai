@@ -1,0 +1,28 @@
+/* Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .btn-primary {
+    background-color: black;
+    color: white;
+  }
+  
+  .btn-outline {
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  

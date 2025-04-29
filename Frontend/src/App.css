@@ -1,0 +1,198 @@
+/* Make entire homepage fixed (no scrolling) */
+html, body {
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Left-aligned logo and name */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.nav-center {
+  display: flex;
+  gap: 45px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-spacing {
+  width: 30px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 88vh;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.vertical-line {
+  width: 5px;
+  height: 100px;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.animated-text {
+  font-size: 34px;
+  font-weight: bold;
+  color: black;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.animated-text span {
+  display: inline-block;
+}
+
+/* Centered Chat Input Box */
+.chat-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 90%;
+  max-width: 700px;
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+/* Enlarged Textbox */
+.chat-textbox {
+  flex-grow: 1;
+  height: 60px;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+/* Attach, Voice, and Send Buttons */
+.attach-icon-btn,
+.voice-icon-btn,
+.send-icon-btn {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: gray;
+  transition: color 0.3s ease;
+}
+
+.attach-icon-btn:hover,
+.voice-icon-btn:hover {
+  color: black;
+}
+
+/* Send Button Styling */
+.send-icon-btn {
+  background: black;
+  border-radius: 50%;
+  color: white;
+}
+
+.send-icon-btn:hover {
+  background: #333;
+}
+
+/* Response Container */
+.response-container {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 700px;
+  text-align: left;
+}
+
+.response-label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+.response-textarea {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  white-space: pre-wrap;
+  resize: vertical;
+  height: 200px;
+  font-family: 'Courier New', Courier, monospace;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.footer .social-icons,
+.footer .resources,
+.footer ul {
+  display: flex;
+  gap: 30px;
+}
